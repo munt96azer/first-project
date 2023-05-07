@@ -1,0 +1,619 @@
+/* * معناه تطبق على كل العناصر */
+
+*{
+   padding: 0%;
+   margin: 0%; 
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   font-family:"baloo chettan 2" cursive;
+   transition: all 0.2s ease-in-out;
+}
+
+body{
+    margin: 0%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+
+/* start screen responsive */
+.container{
+    margin: 0 auto;
+    padding: 0 40px;
+}
+ /* big */
+ @media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+ /* medium */
+ @media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+}
+/* end screen responsive */
+
+
+/* start nav bar */
+.nav-bar{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+z-index: 10;
+
+}
+
+.nav-bar .container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 1px;
+    height: 12vh;
+    align-items: center;
+    
+}
+
+.nav-bar .container .logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-bar .container .links ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.nav-bar .container .links ul li a{
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-bar .container .links ul li a:hover{
+    color: #543688;
+}
+
+.nav-bar .container .links ul li .home{
+    display: block;
+    border: solid 3px #543688;
+    padding: 10px 20px;
+    color: white;
+    background: #543688;
+}
+
+.nav-bar .container .links ul li .home:hover{
+    background: #fff;
+    color: #543688;
+    
+}
+
+
+ /* big */
+ @media (max-width: 1200px){
+ }
+ /* medium */
+ @media (max-width: 992px){
+ }
+/* small */
+@media (max-width: 768px){
+    .nav-bar .container .links{
+        display: none;
+    }
+}
+/* end nav bar */
+
+/* start landing page  */
+
+.landing-page{
+    background-image: url("../image/vlcsnap-2023-04-30-10h01m21s039.png");
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.landing-page .background{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(9,160,246,1) 10%, rgba(255,255,255,1) 100%);
+}
+    
+
+.landing-page .container{
+     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    width: fit-content;
+    
+}
+
+.landing-page .container h1{
+    font-size: 55px;
+    color: #444;
+}
+
+.landing-page .container .my-name{
+    font-size: 50px;
+    color: #212529e6;
+}
+
+.landing-page .container p{
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: #111;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.landing-page .container button{
+    border: solid 3px #543688;
+    padding: 10px 20px;
+    color: white;
+    background: #543688;
+    width: 190px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+ .landing-page .container button:hover{
+    background: #fff;
+    color: #543688;
+    letter-spacing: 1px;
+ }
+
+ /* big */
+ @media (max-width: 1200px){
+}
+/* medium */
+@media (max-width: 992px){
+}
+/* small */
+@media (max-width: 768px){
+    .landing-page .container{
+       justify-content: center;
+       align-items: center;
+   }
+   .landing-page .container h1{
+    font-size: 40px;
+   }
+}
+/* end landing page  */
+
+ /* start about  */
+
+.about .container{
+
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 6rem;
+}
+
+.about .container .image-container{
+   width: 400px;
+    
+}
+
+.about .container .image-container img{
+    width: 100%;
+}
+
+.about .container .contant h3{
+    font-size: 15px;
+    color: #999;
+    letter-spacing: 3;
+    margin-bottom: 10px;
+}
+
+.about .container .contant h2{
+    FONT-SIZE: 32px;
+    color: #543688;
+    margin-bottom: 1rem;
+}
+
+.about .container .contant p{
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+ 
+.about .container .contant button{
+    border: solid 3px #543688;
+    padding: 10px 20px;
+    color: white;
+    background: #543688;
+    width: 190px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.about .container .contant button:hover{
+    background: #fff;
+    color: #543688;
+    letter-spacing: 1px;
+}
+
+/* big */
+@media (max-width: 1200px){
+}
+/* medium */
+@media (max-width: 992px){
+}
+/* small */
+@media (max-width: 768px){
+    .about .container{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+    
+   }
+}
+ /* end about  */
+
+ /* start portifoli */
+
+.portfolio .container{
+    text-align: center;
+}
+
+.portfolio .container h3{
+    font-size: 32px;
+    font-family: "baloo paaji",cursive;
+    color:#543688 ;
+    margin-bottom: 1rem
+}
+
+.portfolio .container p{
+    font-size: 18px; 
+    font-weight: 100;
+    margin-bottom: 3rem;
+    
+}
+
+.portfolio .container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.portfolio .container .box-container .box img{
+    width: 100%;
+    height: 100%;
+}
+
+/* parent box */
+.portfolio .container .box-container .parent-box{
+   width: 30%;
+    position: relative;
+}
+
+/*  new box - items */
+.portfolio .container .box-container .box-new{
+    opacity: 0;
+    position: absolute;
+    background-color: #e1dfedc1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.portfolio .container .box-container .box-new h4{
+    font-size: 25px;
+    font-weight: 500;
+    color: #543688;
+    font-family:"baloo paaji",cursive;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio .container .box-container .box-new a{
+    color: #000;
+    
+}
+  
+/* hover for items h4 and a  */
+
+.portfolio .container .box-container .parent-box:hover .box-new{
+    opacity: 100%;
+    transition: all 0.3 ease-in-out;
+    pointer-events: auto;
+}
+
+ /* big */
+ @media (max-width: 1200px){
+}
+/* medium */
+@media (max-width: 992px){
+}
+/* small */
+@media (max-width: 768px){
+    .portfolio .container .box-container{
+        flex-direction: column;
+   }
+   .portfolio .container .box-container .parent-box{
+    width: 100%;
+   }
+   .portfolio .container .box-container .box-new{
+    opacity: 1;
+   }
+   .portfolio .container .box-container .box-new h4{
+    font-weight: bold;
+}
+.portfolio .container .box-container .box-new a{
+    font-weight: bold;
+}
+}
+ /* end portifoli */
+
+ /* start blue section */
+
+ .blue-section{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background: #543688;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+ }
+
+ .blue-section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+
+ .blue-section .container .left p{
+    font-size: 21px;
+    color: #fff;
+    
+ }
+
+
+ .blue-section .container .left .first-text{
+    font-family: "baloo paaji",cursive ;
+ }
+
+
+ .blue-section .container .right button{
+    font-family: "baloo paaji",cursive ;
+    border: solid 3px #fff;
+    padding: 10px 20px;
+    color:#543688;
+    background: #fff;
+    width: 150px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+ }
+
+ .blue-section .container .right button:hover{
+    letter-spacing: 1px;
+ }
+
+ /* big */
+@media (max-width: 1200px){
+}
+/* medium */
+@media (max-width: 992px){
+}
+/* small */
+@media (max-width: 768px){
+    .blue-section .container{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+    }
+}
+ /* end blue section */
+
+/* start testimonsl */
+
+.testi-section .containar{
+    text-align: center;
+}
+
+.testi-section .containar h5{
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+    letter-spacing: 0.6px;
+}
+
+.testi-section .containar h3{
+    font-size:32px;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    font-weight: bold;
+    color: #543688;
+    font-family: "baloo paaji",cursive ;
+}
+
+
+.testi-section .containar .parent-item{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+
+}
+
+.testi-section .containar .parent-item .first{
+    border: solid 2px #543688;
+    padding: 14px;
+    width: 30%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    padding-left: 55px;
+}
+
+.testi-section .containar .parent-item .first .text{
+    text-align: start;
+}
+
+.testi-section .containar .parent-item .first .text p{
+  margin-bottom: 1rem
+}
+
+.testi-section .containar .parent-item .first .text h4{
+    color: #543688;
+    font-family: "baloo paaji",cursive ;
+}
+
+.testi-section .containar .parent-item .first .image-container{
+    width: 4rem;
+    position: absolute;
+    left: -32px;
+}
+
+.testi-section .containar .parent-item .first .image-container img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+ /* big */
+ @media (max-width: 1200px){
+}
+/* medium */
+@media (max-width: 992px){
+}
+/* small */
+@media (max-width: 768px){
+    .testi-section .containar .parent-item{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testi-section .containar .parent-item .first{
+        width: 70%;
+
+    }
+    .testi-section .containar .parent-item .first .image-container{
+        left: 234px;
+        bottom: -37px;
+    }
+} 
+/* end testimonsl */
+
+/* start contact */
+
+.contact .containar {
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.contact .containar .text p{
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 1rem;
+}
+
+.contact .containar .text h4{
+    font-size: 32px;
+    font-family: "baloo paaji",cursive;
+    color: #543688;
+    margin-bottom: 3rem;
+}
+
+.contact .containar .inputs{
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+
+.contact .containar .inputs .name input{
+    padding: 10px;
+    width: 250px;
+}
+
+.contact .containar .inputs .email input{
+    padding: 10px;
+    width: 250px;
+}
+
+.contact .containar .inputs .message input{
+    padding: 10px;
+    width: 250px;
+}
+
+.contact .containar .inputs .message textarea{
+    padding: 10px;
+}
+
+/* button */
+.contact .containar .button button{
+    border: solid 3px #543688;
+    padding: 10px 20px;
+    color: white;
+    background: #543688;
+    width: 190px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .containar .button button:hover{
+    background: #fff;
+        color: #543688;
+        letter-spacing: 1px;
+}
+/* end contact */
+
+/* final */
+.final .container{
+    border-top: solid black 1px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.final .container p{
+    font-size: 15px;
+    color: #999;
+    margin-bottom: 1rem;
+    margin-top: 1rem
+}
+
+.final .container a{
+    color: #543688;
+}
