@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
+    <meta name="description" content="Explore Muntazer's front-end projects, including a creative agency website and an interactive color gradient generator.">
+    <meta name="theme-color" content="#543688">
+    <title>Muntazer | Front-End Developer</title>
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 <!-- start nav bar -->
-    <nav class="nav-bar">
+    <nav class="nav-bar" aria-label="Main navigation">
         <div class="container">
 <!-- this for logo -->
             <div class="logo">
-                <a href="">muntazer</a>
+                <a href="#top">muntazer</a>
             </div>
 
 <!-- this for links -->
         <div class="links">
                 <ul>
-                    <li><a class="home" href="">home</a></li>
+                    <li><a class="home" href="#top">home</a></li>
                     <li><a href="#about">about</a></li>
-                    <li><a href="#portfolio">prtifolie</a></li>
-                    <li><a href="#testi-section">testmonial</a></li>
-                    <li><a href="#content">content</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#testi-section">testimonials</a></li>
+                    <li><a href="#content">contact</a></li>
                 </ul>
         </div>
 
@@ -34,20 +36,20 @@
     
 <!-- start landing page -->
 
-<div class="landing-page">
+<main id="top">
+<section class="landing-page" aria-labelledby="hero-title">
     <div class="background"></div>
     <div class="container">
-        <h1> Hi !</h1>
-        <h1 class="my-name">I am muntazer</h1>
-        <p>FRONTEND WEP DEVELOPER</p>
-        <button>visit my works</button>
+        <h1 id="hero-title">Hi, I'm Muntazer</h1>
+        <p>FRONT-END WEB DEVELOPER</p>
+        <a class="button-link" href="#portfolio">Visit my work</a>
     </div>
-</div>
+</section>
 
 <!-- end landing page -->
     
 <!-- start about -->
-<div id="about" class="about">
+<section id="about" class="about" aria-labelledby="about-title">
     <div class="container">
 
         <div class="image-container">
@@ -56,7 +58,7 @@
 
         <div class="contant">
             <h3> Who Am I ?</h3>
-            <h2>About Me</h2>
+            <h2 id="about-title">About Me</h2>
             <p>Lorem ipsum dolor, sit amet consectetur 
                 adipisicing elit. Vero illo iure, repellat 
                 suscipit neque architecto quo culpa et qui 
@@ -67,62 +69,74 @@
         </div>
 
     </div>
-</div>
+</section>
 
 <!-- end about -->
 
 <!-- start portifoli -->
 
-<div id="portfolio" class="portfolio">
+<section id="portfolio" class="portfolio" aria-labelledby="portfolio-title">
     <div class="container">
 
-        <h3>See My Works</h3>
-        <p>portfolio</p>
+        <h3 id="portfolio-title">Selected Projects</h3>
+        <p>A selection of front-end work, from responsive layouts to interactive tools.</p>
 
         <div class="box-container">
+            <article class="project-card">
+                <div class="project-preview project-preview--agency" aria-hidden="true">
+                    <div class="preview-browser-bar"><span></span><span></span><span></span><b>creative studio</b></div>
+                    <div class="agency-preview-content">
+                        <span class="preview-eyebrow">CREATIVE STUDIO</span>
+                        <strong>Ideas into<br>experiences.</strong>
+                        <span class="preview-cta">DISCOVER MORE&nbsp; ↗</span>
+                    </div>
+                </div>
+                <div class="project-card-content">
+                    <p class="project-type">Responsive website</p>
+                    <h4>Creative Agency Landing Page</h4>
+                    <p>A one-page agency site with services, portfolio, about, and contact sections.</p>
+                    <ul class="project-tags" aria-label="Technologies used">
+                        <li>HTML</li><li>CSS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://munt96azer.github.io/project-3/" target="_blank" rel="noopener noreferrer">Live preview <span aria-hidden="true">↗</span></a>
+                        <a href="https://github.com/munt96azer/project-3" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </article>
 
-    <div class="parent-box">
-            <div class="box">
-                <img src="./image/pexels-cup-of-couple-6177607.jpg" alt="">
-            </div>
-            <div class="box-new">
-                <h4>project</h4>
-                <a href="">GitHub</a>
-            </div>
-    </div>
-
-    <div class="parent-box">
-            <div class="box">
-                <img src="./image/pexels-ketut-subiyanto-4126743.jpg" alt="">
-            </div>
-            <div class="box-new">
-                <h4>project</h4>
-                <a href="">GitHub</a>
-            </div>
-    </div>
-
-
-    <div class="parent-box">
-            <div class="box">
-                <img src="./image/pexels-vlada-karpovich-4050347.jpg" alt="">
-            </div>
-            <div class="box-new">
-                <h4>project</h4>
-                <a href="">GitHub</a>
-            </div>
-    </div>
-
-
-
+            <article class="project-card">
+                <div class="project-preview project-preview--gradient" aria-hidden="true">
+                    <div class="gradient-preview-label">COLOR STUDIO <span>● ● ●</span></div>
+                    <div class="gradient-preview-controls">
+                        <span class="color-chip color-chip--one">#00E4D2</span>
+                        <span class="gradient-preview-arrow">→</span>
+                        <span class="color-chip color-chip--two">#CFD1F1</span>
+                    </div>
+                    <div class="gradient-preview-code">linear-gradient(to right, #00E4D2, #CFD1F1);</div>
+                </div>
+                <div class="project-card-content">
+                    <p class="project-type">Interactive tool</p>
+                    <h4>Color Gradient Generator</h4>
+                    <p>Choose two colors, preview the gradient instantly, and read the generated CSS value.</p>
+                    <ul class="project-tags" aria-label="Technologies used">
+                        <li>JavaScript</li><li>SCSS</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://munt96azer.github.io/color-project/" target="_blank" rel="noopener noreferrer">Live preview <span aria-hidden="true">↗</span></a>
+                        <a href="https://github.com/munt96azer/color-project" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </article>
         </div>
     </div>
-</div>
+</section>
 
 <!-- end portifoli -->
 
 <!-- start blue section -->
 
-<div class="blue-section">
+<section class="blue-section" aria-label="Work together">
     <div class="container">
         <div class="left">
             <p class="first-text">Want to work with me ?</p>
@@ -130,19 +144,19 @@
         </div>
 
         <div class="right">
-            <button>Hire Me</button>
+            <a class="button-link" href="mailto:munt96azer@gmail.com">Hire Me</a>
         </div>
     </div>
-</div>
+</section>
 
 <!-- end blue sectionline -->
 
 <!-- start testimonial -->
 
-<div id="testi-section" class="testi-section">
+<section id="testi-section" class="testi-section" aria-labelledby="testimonials-title">
     <div class="containar">
         <h5>What Think Client About Me ?</h5>
-        <h3>Testmonial</h3>
+        <h3 id="testimonials-title">Testimonials</h3>
 
         <div class="parent-item">
             <div class="first">
@@ -174,56 +188,39 @@
         </div>
         
     </div>
-</div>
+</section>
 
 <!-- end testimonial -->
 
 <!-- start contact -->
 
-<div id="content" class="contact">
+<section id="content" class="contact" aria-labelledby="contact-title">
     <div class="containar">
 
         <div class="text">
             <p>How can you communiction ?</p>
-            <h4>Contact Me</h4>
+            <h4 id="contact-title">Contact Me</h4>
         </div>
 
-        <div class="inputs">
-
-            <div class="name">
-                <input type="text" placeholder="Enter username ..." required>
-            </div>
-
-            <div class="email">
-                <input type="email" placeholder="Enter email ..."required>
-            </div>
-
-            <div class="message">
-                <textarea placeholder="Write sometjing"cols="30" rows="10" required>
-
-                </textarea>
-            </div>
-
-            <div class="button">
-                <button>sent</button>
-            </div>
-        </div>
+        <a class="button-link" href="mailto:munt96azer@gmail.com">Email me</a>
 
             
     </div>
-</div>
+</section>
+</main>
 
 <!-- end contact -->
 
 <!-- buttom -->
-<div class="final">
+<footer class="final">
     <div class="container">
         <p>
             copyright © all rights reserved
         </p>
 
-        <a href="munt96azer@gmail.com">munt96azer@gmail.com</a>
+        <a href="mailto:munt96azer@gmail.com">munt96azer@gmail.com</a>
     </div>
-</div>
+</footer>
 </body>
 </html>
+
